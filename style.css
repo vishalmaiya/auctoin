@@ -1,0 +1,208 @@
+/*
+Theme Name: Twenty Fifteen
+Theme URI: https://wordpress.org/themes/twentyfifteen/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. We designed it using a mobile-first approach, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer.
+Version: 1.3
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: twentyfifteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+/**
+ * Table of Contents
+ *
+ * 1.0 - Reset
+ * 2.0 - Genericons
+ * 3.0 - Typography
+ * 4.0 - Elements
+ * 5.0 - Forms
+ * 6.0 - Navigations
+ *   6.1 - Links
+ *   6.2 - Menus
+ * 7.0 - Accessibility
+ * 8.0 - Alignments
+ * 9.0 - Clearings
+ * 10.0 - Header
+ * 11.0 - Widgets
+ * 12.0 - Content
+ *    12.1 - Posts and pages
+ *    12.2 - Post Formats
+ *    12.3 - Comments
+ * 13.0 - Footer
+ * 14.0 - Media
+ *    14.1 - Captions
+ *    14.2 - Galleries
+ * 15.0 - Multisite
+ * 16.0 - Media Queries
+ *    16.1 - Mobile Large
+ *    16.2 - Tablet Small
+ *    16.3 - Tablet Large
+ *    16.4 - Desktop Small
+ *    16.5 - Desktop Medium
+ *    16.6 - Desktop Large
+ *    16.7 - Desktop X-Large
+ * 17.0 - Print
+ */
+
+ 
+/* REMOVE ROUNDED CORNERS */ 
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+} 
+
+/*------------------------------------------------------*/
+/* BODY
+/*------------------------------------------------------*/
+
+body {
+    background:#fff url(img/noise.png);
+    font-family:'Open Sans',sans-serif
+}
+a { color:#666; }
+
+/*------------------------------------------------------*/
+/* GOOGLE FONT
+/*------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+	 
+   font-weight: 700;
+
+}
+
+#core_logo .main { text-shadow: 1px 1px 1px #585D5A; }
+#core_logo .submain { color: #76C193; }
+ 
+/*------------------------------------------------------*/
+/* TOP NAVIGATION
+/*------------------------------------------------------*/
+
+#core_header_navigation {
+    background:#222222
+}
+ 
+#core_header_navigation .nav > li a, #core_header_navigation .welcometext  {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+ 
+
+/*------------------------------------------------------*/
+/*  MAIN MENU
+/*------------------------------------------------------*/
+
+#core_header_wrapper {
+    border-top: 1px solid #47CC7B;
+    background-color: #39A061; 
+    border-bottom: 2px solid #436D53;
+}
+
+#core_menu_wrapper .nav > li > a { color:#fff; }
+
+.header_style2 .navbar {    margin-top: 25px; }
+.header_style2 .navbar-nav { background:none; }
+.header_style2 .navbar-nav li a { border-right:1px; padding-left:0px; }
+.header_style2 .navbar-nav li a:after { border-right:1px solid rgba(255, 255, 255, 0.2); height:20px; content:" "; display:block; float:right; padding-left:20px; }
+.header_style2 .dropdown li a { padding-left:20px; }
+.header_style2 .dropdown li a:after { border-right:0px; }
+
+/*------------------------------------------------------*/
+/*  BREADCRUMBS
+/*------------------------------------------------------*/
+
+#core_breadcrumbs { background:#fff; }
+
+/*------------------------------------------------------*/
+/*  CONTENT
+/*------------------------------------------------------*/
+
+.search #core_middle_column, .archive #core_middle_column {background: #fff;border: 1px solid #ddd; margin-bottom:20px; padding:30px;}
+._searchresultsblock h3 {
+ 
+    font-size: 40px;
+}
+
+.single #core_middle_column { background: #fff; padding: 20px; margin-bottom:20px; }
+
+/*------------------------------------------------------*/
+/* BUTTONS
+/*------------------------------------------------------*/
+
+.btn-primary { background-image:none; background: #39A061; border-color:#39A061;  font-size: 21px; }
+.btn-primary:focus, .btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] { color: white; background-color: #39A061; border:1px solid #39A061; }	
+
+.packblock.selected .price, #enhancementsblock .alert-success, #wlt_stepswizard .label-default { background-color: #39A061; }
+
+
+/*------------------------------------------------------*/
+/* PANELS
+/*------------------------------------------------------*/
+
+#core_advanced_search_widget_box .panel-heading, .panel-default>.panel-heading { padding:20px; font-weight:bold; font-size:16px; color: #999;     text-shadow: 1px 1px 1px #FFF; }
+
+/*------------------------------------------------------*/
+/*  HOME LAYOUT
+/*------------------------------------------------------*/
+
+.sbg1 {  background: url(img/header.jpg); background-size:cover;  }
+.overwrap { background: rgba(14, 14, 14, 0.9);  }
+.sbg1 .title-lines { color:#fff; padding-top:30px }
+.sbg1 .owl-carousel { margin:0px; margin-top:30px; margin-bottom:30px; }
+
+.home #wlt_google_map { margin-bottom:0px; }
+@media (min-width: 1200px) {
+.home .title-lines h2 { font-size:60px; }
+}
+
+.home .tabstyle1 .nav-tabs { background:#39A061; margin-top:30px; }
+.home .tabstyle1 .nav-tabs>li { margin-bottom:0px; }
+.home .tabstyle1 .nav-tabs>li a:hover { background:transparent; border:1px solid transparent; }
+.home .tabstyle1 .nav-tabs>li a { color:#fff; font-weight:normal; }
+.home .tabstyle1 .nav-tabs>li.active>a, .tabstyle1 .nav-tabs>li.active>a:focus, .tabstyle1 .nav-tabs>li.active>a:hover { background:transparent; border:0px; }
+.home .tabstyle1 .nav-tabs > li.active a  { color:#fff; font-weight:bold; }
+.home .tabstyle1 .nav-tabs > li .btn { margin:0px;     background: #000;  }
+.home .tabstyle1 .nav-tabs > li .btn:hover { background:#222; }
+
+/*** search box ***/
+.searchme {  background: #39A061; padding:30px;  margin-bottom:20px; margin-top:20px; }
+.searchme h5 { font-size:40px; font-weight:300; color: #ffffff; }
+.searchme p {  color: #ffffff;  font-size: 16px;  text-align:left; }
+.searchme form {    float: left;    margin-top: 30px;    width: 100%;    -webkit-border-radius: 3px;    -moz-border-radius: 3px;    -ms-border-radius: 3px;    -o-border-radius: 3px;border-radius: 3px;overflow: hidden;border: 1px solid #fff;}
+.searchme input {    background: #efefef;    border: medium none;    float: left;    height: 60px;    width: 80%;  font-size: 11px;    color: #858585;    padding-left: 30px;    letter-spacing: 0.30px;}
+.searchme button {    float: right;    text-align: center;    width: 20%; font-size: 13px;    font-weight: 600;    color: #ffffff;    line-height: 10px;    height: 60px;    line-height: 38px;	background:#000;	border:0px;}	
+
+@media (min-width: 1200px) {
+.searchme .col-md-7:before {     font-family: FontAwesome; content: "\f002";    font-size: 80px;    float: left;    margin-right: 20px;    color: #fff;    margin-top: -10px; }
+}
+@media (max-width: 480px) {
+.searchme h5 { font-size:30px; }
+.searchme  p { display:none; }
+.searchme { padding:10px; }
+.searchme button { width:30%; }
+.searchme input  { width:70%; }
+}
+/*------------------------------------------------------*/
+/*  DEMO STYLES
+/*------------------------------------------------------*/
+
+.demomode .header_style2 .navbar-nav li:nth-child(6), .demomode .header_style2 .navbar-nav li:nth-child(7){ display:none; } 
+.soldout
+{
+        font-size: 17px;
+    color: #F00;
+    font-weight: bold;
+}
+.winner-price,.winner-name
+{ 
+    font-size: 16px;
+    font-weight: bold;
+}
